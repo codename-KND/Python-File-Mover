@@ -1,0 +1,19 @@
+bigfile.txt
+done.txt
+dumm1.csv
+dumm12.csv
+error2.csv
+errors 3.csv
+fol1.txt
+fol2.txt
+fol3.txt
+fol4.txt
+list.txt
+newarr.txt
+newarr3.txt
+newarr4.txt
+qcs.csv
+Teacherfiles_15.06.22.csv
+tee.txt
+wee.csv
+wee2.csv

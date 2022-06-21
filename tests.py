@@ -1,7 +1,7 @@
 import os
 import shutil
-sourcee = 'C:\Users\LENY\Desktop\code\folder'
-destinationn = 'C:\Users\LENY\Desktop\code\targfold'
+sourcee = r"C:\Users\LENY\Desktop\code\mieeen\folder"
+destinationn = r"C:\Users\LENY\Desktop\code\mieeen\targfold"
 getfile = os.listdir(sourcee)
 for g in getfile:
     shutil.move(sourcee +g, destinationn)
