@@ -6,13 +6,14 @@ sourcee = r"C:\Users\LENY\Desktop\code\mieeen\folder" + '\\'
 destinationn = r"C:\Users\LENY\Desktop\code\mieeen\targfold" + '\\'
 
 
-def movefile(sourcefolder, targetfolder):
+def movefile(sourcefolder, targetfolder, fold):
     try:
-        for path,dir, files in os.walk(sourcefolder):
+        for path,dir in os.walk(sourcefolder):
             if files:
-                for file in files:
-                    if not os.path.isfile(targetfolder + file):
-                        os.rename(path + '\\' +file, targetfolder + file)
+                for file in dir:
+                    if file in fold:
+                        if not os.path.isfile(targetfolder + file):
+                            os.rename(path + '\\' + file, targetfolder + file)
         print('done')
     except Exception as e:
         print(e)
@@ -23,10 +24,7 @@ list =[]
 
 for line in subset:
     list.append(line.strip())
-    print(list)
+
 
 for element in list:
-    if element not in list:
-        print('skipped')
-    else:
-        movefile(sourcee,destinationn)
+    movefile(sourcee,destinationn,element)
