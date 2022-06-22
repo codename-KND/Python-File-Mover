@@ -7,7 +7,5 @@ fol4.txt
 list.txt
 newarr.txt
 newarr3.txt
-target.txt
-tee.txt
 wee.csv
 wee2.csv

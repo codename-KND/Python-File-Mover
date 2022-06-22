@@ -19,10 +19,14 @@ def movefile(sourcefolder, targetfolder):
 
 with open ("files.txt") as file:
     subset = set(file.readlines())
+list =[]
 
-list = subset.append(line.strip())   
+for line in subset:
+    list.append(line.strip())
+    print(list)
+
 for element in list:
-    if element not in subset:
-        print('not found')
+    if element not in list:
+        print('skipped')
     else:
         movefile(sourcee,destinationn)
