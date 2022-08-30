@@ -1,6 +1,0 @@
-what
-where 
-when
-no 
-yes
-maybe
